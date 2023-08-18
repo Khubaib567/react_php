@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 // API endpoint
 app.get('/express', (req, res) => {
     res.json({ message: 'Hello from Express!' });
-  });
+});
     
 // Handles any requests that don't match the ones above
 app.get('/api/*', (req, res) => {
